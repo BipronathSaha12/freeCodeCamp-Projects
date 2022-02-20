@@ -1,4 +1,4 @@
-# freecodecamp-responsive-web-development-projects
+# Responsive_Web_Design
 
 This repo contains 5 several Responsive Web Design Projects from "freecodecamp.org" 
 
