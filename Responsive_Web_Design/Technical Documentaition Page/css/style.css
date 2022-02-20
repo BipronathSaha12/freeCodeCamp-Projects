@@ -1,0 +1,128 @@
+/*==========================================================================================
+                                    Google Fonts
+============================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/*============================================================================================
+                                        General Styling 
+==============================================================================================*/
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+:root{
+    --color-text: #4d4e53;
+    --color-background: #ffffff;
+    --color-text-color:#333;
+    --color-nav-hover: #d3d3d3;
+    --color-white:#f7f7f7;
+}
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin:0;
+    padding: 0;
+    min-width: 290px;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    color: var(--color-text-color);
+    margin: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*============================================================================================
+                                Navbar Design 
+=============================================================================================*/
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 290px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.3);
+}
+#navbar ul{
+    height: 88%;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#navbar ul li{
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid;
+}
+#navbar ul li a.nav-link{
+    display: block;
+    padding: 10px 30px;
+    color: var(--color-text);
+    font-weight: 400;
+    cursor: pointer;
+}
+#navbar ul li a.nav-link:hover{
+    background-color:var(--color-nav-hover);
+    transition: 0.5s;
+}
+#navbar > header{
+    margin: 10px;
+    text-align: center;
+}
+
+/*===========================================================================================
+                                    Main Section Design
+============================================================================================*/
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+#main-doc header{
+    text-align: left;
+    margin: 0;
+}
+.main-section article{
+    font-size: 0.96rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin: 15px;
+
+}
+.main-section article p{
+    font-size: 1rem;
+    text-align: justify;
+}
+section li{
+    margin: 15px 0 0 20px;
+}
+code {
+    display: block;
+    white-space: pre-line;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: var(--color-white);
+    color: #d63384;
+    line-height: 2;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+section li a:hover{
+    text-decoration: underline;
+    color:red;
+    transition: 0.5s;
+}

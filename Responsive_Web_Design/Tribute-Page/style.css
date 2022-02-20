@@ -1,0 +1,207 @@
+/*
+credit: 
+1) All images and texts of Dr. Norman Borlaug are copied from Google and Wikipedia.
+2) Poppin font is selected from Google fonts
+*/
+
+/*========================================================================================
+                                Google font
+=========================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #ff030f;
+}
+body{
+    background-color:var(--color-light-gray);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding:0;
+    margin: 0;
+}
+:root{
+    --color-light-gray: #eeeeee;
+    --color-white: #ffffff;
+    --color-deep-blue: #333369;
+    --color-black:#333333;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*====================================================================================
+                                Main section design
+=====================================================================================*/
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#title {
+    text-align: center;
+    font-size:  4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:var(--color-deep-blue);
+}
+.heading-text{
+    margin-top: -10px;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    color:var(--color-black);
+}
+.heading-text span{
+    font-size: 1.6rem !important;
+}
+/*==========================================================================================
+                                    Figure and Figure Caption design
+===========================================================================================*/
+#img-div{
+    background-color: var(--color-white);
+    padding: 5px 38px;
+    text-align: center;
+}
+#image{
+    width: 840px;
+    display: block;
+}
+#img-caption{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*=========================================================================================
+                                Tribute section design
+==========================================================================================*/
+#tribute-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#tribute-info h2{
+    text-align: center;
+    margin-top:15px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--color-deep-blue);
+}
+#tribute-info h2 span.tribute-heading-span{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.tribute-info-list{
+    float: left;
+    margin-left: 5px;
+    line-height: 1.4;
+}
+.tribute-info-list li{
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.tribute-info-list li span.year{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+blockquote{
+    margin: 10px 10px;
+}
+blockquote p{
+    font-size: 1.6rem;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+h3 a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-deep-blue);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+h3 a:hover{
+    transition: 0.4s;
+    text-decoration: underline;
+    color: #ff030f;
+}
+
+/*================================================================================================
+                                        Responsive Design
+==================================================================================================*/
+@media screen and (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size:1.5rem;
+    }
+    p,a{
+        font-size: 1.3rem;
+    }
+    h1#title{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    h3 a{
+        font-size: 1.4rem;
+    }
+    #tribute-info h2{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    html{
+        font-size: 50%;
+    }
+    #tribute-info h2{
+        font-size: 2rem;
+    }
+
+    .tribute-info-list li{
+        font-size: 1.5rem;
+    }
+    blockquote p{
+        font-size: 1.7rem;
+    }
+
+}
+
+@media screen and (max-width:395px){
+    html{
+        font-size: 45%;
+    }
+    .tribute-info-list li{
+        font-size: 1.3rem;
+    }
+
+}
+

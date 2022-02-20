@@ -1,0 +1,279 @@
+/*=====================================================================================
+                                    Google Font 
+======================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200;1,700&display=swap');
+
+/*============================================================================================
+                                        General Style
+==============================================================================================*/
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+:root{
+    --color-main-red: #be3144;
+    --color-white:#f3f3f3;
+    --color-main-blue: #45567d;
+    --color-black:#000;
+    --color-teal: #008080;
+    --color-light-brown: #3e3530;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--color-main-red);
+}
+body{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+/*==============================================================================
+                            Header Section Design 
+================================================================================*/
+#header #navbar{
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 6px solid var(--color-teal);
+
+}
+#header #navbar a{
+    color: var(--color-white) ;
+    padding: 2rem;
+    font-size: 1.9rem;
+}
+.navbar-nav .nav-item a .nav-link{
+    text-transform: capitalize;
+}
+.nav-link {
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    background-color: var(--color-main-blue);
+    transition: 0.5s;
+}
+/*======================================================================================
+                                Welcome Section Design
+=======================================================================================*/
+
+section#welcome-section {
+    background-color: var(--color-main-blue);
+    background-image: linear-gradient(62deg, #3b4046 0%,  #22152e 100%);
+    width: 100%;
+    height: 100vh;
+    padding: 25rem 2rem;
+
+}
+
+.about-des {
+    text-align: center;
+}
+
+.about-des h1{
+    font-size: 5.5rem;
+    font-weight: 500;
+    margin-bottom: 0.3125rem;
+    color: var(--color-white);
+}
+
+.about-des p{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+}
+
+.typed-text{
+    content: "A Web Developer";
+    color:#2ed573 ;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: blink 3s  linear infinite;
+    overflow: hidden;
+}
+
+@keyframes blink{
+    0%{
+        color: #2ed573 ;
+    }
+    50%{
+        color: #be3144;
+    }
+    100%{
+        color: var(--color-white);
+    }
+}
+/*==================================================================================
+                            Projects Section Design
+===================================================================================*/
+section#projects {
+    background-color: var(--color-main-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 10rem 2rem;
+    border-bottom: 3px solid var(--color-white);
+}
+.projects_heading {
+    max-width: 425px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border-bottom: .2rem solid #f3f3f3;
+    margin: 0 auto 6rem auto;
+}
+.card img{
+    width: 400px; 
+    height: 250px;
+    object-fit: fill;
+    cursor: pointer;
+}
+.card-body h4.project-title{
+    text-align: center;
+    color: var(--color-light-brown);
+    box-shadow: rgb(0 0 0 / 40%);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.card-text{
+    color: var(--color-light-brown);
+    font-size:1.3rem ;
+}
+.card-body a.project-link{
+    text-decoration: none;
+    color: var(--color-main-blue);
+    font-size: 1.4rem;
+}
+.card-body a.project-link:hover{
+    text-decoration: underline;
+}
+a.btn{
+    background-color:var(--color-light-brown) ;
+    color: var(--color-white);
+    padding: 0.9375rem 1.9375rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 2rem auto 2rem auto;
+
+}
+a.btn i{
+    margin-left: .0625rem;
+    color: var(--color-white);
+}
+a.btn:hover{
+    background-color: var(--color-main-red);
+    color: var(--color-white);
+    transition: 0.4s;
+}
+a.btn:hover i{
+    margin-left:0.6245rem;
+    transition: 0.4s;
+}
+/*============================================================================================
+                                    Contact section Design
+=============================================================================================*/
+#contact{
+    background-color: var(--color-black);
+    background-image: linear-gradient(62deg, #3b4046 0%,  #08060ac7 100%);
+    color: var(--color-white);
+    padding: 10rem 2rem;
+    border-bottom: 3px solid var(--color-main-red);
+}
+.contact-text{
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 225px;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 0.2rem solid #f3f3f3;
+    margin: 0 auto 3rem auto;
+}
+form label,input{
+    margin-bottom: 7px;
+    font-size: 1.4rem;
+}
+form input[type="text"], form input[type="email"]{
+    font-size: 1.5rem;
+}
+form label{
+    margin-left: 3px;
+}
+form textarea{
+    resize: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+form textarea[type="text"]{
+    font-size: 1.4rem;
+}
+form button[type="submit"]{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.work-text{
+    max-width: 160px;
+}
+.social-icons{
+    text-align: center;
+}
+.social-icons a{
+    display: block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--color-white);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.social-icons a:hover{
+    color:var(--color-teal);
+    transition: ease-in 0.7s;
+}
+.social-icons a.profile-link{
+    color: var(--color-main-red);
+}
+.social-icons a.profile-link:hover{
+    color:var(--color-teal);
+    transition: ease-in 0.7s;
+}
+/*=================================================================================================
+                                    Footer section Design
+==================================================================================================*/
+#footer{
+    background-color: var(--color-black);
+    background-image: linear-gradient(62deg, #3b4046 0%,  #08060ac7 100%);
+}
+.footer-text{
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.footer-text-span{
+    font-size: 1.6rem;
+    background-color: var(--color-main-blue);
+}
+.footer-text-span a{
+    text-decoration: none;
+    cursor: pointer;    
+    color: var(--color-white);
+}

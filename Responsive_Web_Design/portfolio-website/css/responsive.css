@@ -1,0 +1,51 @@
+/*=======================================================================
+                        Medium Device
+========================================================================*/
+
+@media screen and (max-width:991px){
+    section#welcome-section {
+        height: 50vh;
+        padding: 18rem 2rem;
+    }
+    
+}
+
+/*=======================================================================
+                        Small Device
+========================================================================*/
+
+@media screen and (max-width:767px){
+    html{
+        font-size: 55.5%;
+    }
+    #header #navbar a{
+        font-size: 2rem;
+    }
+    .about-des h1{
+        font-size: 5rem;
+    }
+
+    .footer-text{
+        font-size: 1.6rem;
+    }
+    .footer-text-span{
+        font-size: 1.7rem;
+    }
+}
+
+/*=======================================================================
+                       Extra Small Device
+========================================================================*/
+
+@media screen and (max-width:495px){
+    html{
+        font-size: 40%;
+    }
+    section#welcome-section {
+        height: 50vh;
+        padding: 20rem 2rem;
+    }
+    .about-des h1{
+        font-size: 2.5rem;
+    }
+}
